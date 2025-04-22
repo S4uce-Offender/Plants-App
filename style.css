@@ -9,7 +9,12 @@ p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-/*
+#garden-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
 
 .maindiv {
     display: flex;
@@ -17,10 +22,17 @@ p {
     height: 33.33vh;
     padding: 5px;
     align-items: center;
+    border-left-style: solid;
+    border-left-color: rgb(16, 227, 0);
+    border-left-width: 5px;
 }
 
 .infodiv {
     display: inline-block;
+}
+
+.gardennumbertext {
+    margin-left: 12px;
 }
 
 .graphdiv {
@@ -34,9 +46,7 @@ p {
     
 }
 
-#chart {
+.chart {
     height: 100%;
     width: 100%;
 }
-
-*/
