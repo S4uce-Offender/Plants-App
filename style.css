@@ -3,10 +3,7 @@ body, html {
 }
 
 p {
-    display: inline-block;
-    color: whitesmoke;
-    font-size: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 
 #garden-container {
@@ -19,7 +16,7 @@ p {
 .maindiv {
     display: flex;
     flex-direction: row;
-    height: 33.33vh;
+    height: 400px;
     padding: 5px;
     align-items: center;
     border-left-style: solid;
@@ -28,19 +25,124 @@ p {
 }
 
 .infodiv {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 50px; 
 }
 
 .gardennumbertext {
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-left: 12px;
+    margin-right: 130px;
+}
+
+.buttonscontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}
+
+.topbuttonscontainer, .botttombuttonscontainer {
+    display: inline-block;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="radio"] {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    appearance: none;   
+    width: 160px;
+    height: 160px;
+    background-color: rgba(16, 24, 25, 1); 
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    transition: all 0.15s ease; 
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    border: 2px solid white;
+}
+
+input[type="radio"]:disabled {
+    pointer-events: none; 
+    cursor: default;
+}
+
+.infobutton {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    appearance: none;   
+    width: 150px;
+    height: 150px;
+    background-color: rgba(16, 24, 25, 1); 
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 4.5px solid white;
+    cursor: pointer;
+    transition: all 0.07s ease; 
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.infobutton.active {
+    border: 5.5px solid white;
+}
+
+.data {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#temperaturebutton {
+    border-color: blue;
+    align-items: center;
+    justify-content: center;
+}
+
+#humiditybutton {
+    border-color: rgba(128, 128, 128, 1);
+    align-items: center;
+    justify-content: center;
+}
+
+#waterlevelbutton {
+    border-color: rgba(144, 215, 245, 1);
+    align-items: center;
+    justify-content: center;
+}
+
+#sunlightbutton {
+    border-color: orange;
+    align-items: center;
+    justify-content: center;
 }
 
 .graphdiv {
     display: flexbox;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     position: relative;
     height: 100%;
-    width: 45vw;
+    width: 48vw;
     margin-left: auto;
     margin-right: 0;
     
@@ -48,5 +150,9 @@ p {
 
 .chart {
     height: 100%;
-    width: 100%;
+    width: 80%;
+}
+
+.button {
+    display: inline-block;
 }
